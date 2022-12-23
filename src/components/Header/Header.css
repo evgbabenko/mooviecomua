@@ -1,0 +1,9 @@
+section.header{
+    margin: 5rem 0;
+}
+
+@media screen and (max-width: 1000px) {
+    section.header{
+        margin: 0;
+    }
+}

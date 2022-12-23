@@ -1,0 +1,158 @@
+section.contact {
+    padding: 0;
+    max-width: 100vw;
+}
+
+section.contact .overlay {
+    width: 100%;
+    height: 100%;
+    
+    padding: 10rem 0 7rem;
+}
+
+
+section.contact .container {
+    width: 65%;
+}
+
+section.contact .container h1 {
+    color: var(--color-white);
+    margin: 0;
+}
+
+section.contact .container p {
+    color: var(--color-white);
+    text-align: center;
+    opacity: 0.8;
+    margin-top: 0.5rem;
+}
+
+section.contact form {
+    margin-top: 3rem;
+}
+
+section.contact form textarea {
+    font-family: 'Montserrat';
+    height: 10rem;
+}
+
+section.contact form input,
+section.contact form textarea {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1.6rem;
+    border: 1px solid var(--color-white);
+    background: transparent;
+    color: var(--color-white);
+    transition: var(--transition);
+    resize: none;
+}
+
+section.contact form input:focus,
+section.contact form textarea:focus {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+section.contact form input::placeholder,
+section.contact form textarea::placeholder {
+    color: var(--color-white);
+}
+
+section.contact form .btn {
+    width: 14rem;
+    border: none;
+    background: var(--color-white);
+    color: var(--color-black);
+    margin: 2rem auto 0;
+}
+
+section.contact form .btn:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+section.contact .contact-options {
+    margin: 5rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    width: 100%;
+}
+
+section.contact .contact-option {
+    background: var(--color-white);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: 0px solid transparent;
+    transition: var(--transition);
+    color: var(--color-black);
+}
+
+section.contact .contact-option p {
+    color: var(--color-black);
+}
+
+section.contact .contact-option:hover p {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+section.contact .contact-option:hover {
+    background: linear-gradient(10deg, var(--color-white), transparent);
+    box-shadow: 0 1rem 2rem var(--color-primary);
+    cursor: pointer;
+}
+
+section.contact .contact-option-icon {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+section.contact .contact-option a {
+    margin-top: 0.6rem;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+section.contact .contact-option h5 {
+    text-transform: none;
+}
+
+section.contact .message-box {
+    height: 0rem;
+}
+
+.success {
+    color: var(--color-success);
+}
+
+.error {
+    color: var(--color-warning);
+}
+
+@media screen and (max-width: 1380px) {
+    section.contact .contact-options {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.contact .container {
+        width: 94vw;
+    }
+
+    section.contact .container p {
+        width: 80vw;
+        margin: 0.5rem auto 0;
+    }
+
+    section.contact .contact-options {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

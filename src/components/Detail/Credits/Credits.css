@@ -1,0 +1,28 @@
+section.credits{
+    margin: 3rem 0;
+}
+.list-name{
+    margin: 1rem 0;
+}
+.credits-card{
+    border: 1px solid var(--color-primary);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.credits-card .credits-image-box{
+    width: 100% !important;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.credits-card .credits-image-box img{
+    width: 100%;
+    overflow-x: hidden;
+    object-fit: scale-down;
+}

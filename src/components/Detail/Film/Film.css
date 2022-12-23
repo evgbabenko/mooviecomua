@@ -1,0 +1,48 @@
+section.filmbox{
+    margin: 3rem 1rem;
+}
+
+.info-box{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: start;
+}
+
+.info-box img{
+    width: 80%;
+    justify-self: center;
+}
+
+.info-box .movie-details{
+    display: inline-block;
+}
+
+.info-box .movie-details .movie-title,
+.info-box .movie-details .movie-release-date,
+.info-box .movie-details .movie-rating,
+.info-box .movie-details .movie-runtime,
+.info-box .movie-details .movie-genrebages,
+.info-box .movie-details .movie-production-companies,
+.info-box .movie-details .movie-production-countries,
+.info-box .movie-details .movie-original-language,
+.info-box .movie-details .movie-spoken-language,
+.info-box .movie-details .movie-overview
+{
+    margin-bottom: 2rem;
+}
+
+.info-box .movie-details .movie-genrebages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+    .info-box{
+        grid-template-columns: 1fr;
+    }
+    .info-box img{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+}

@@ -1,0 +1,25 @@
+section.catalogue {
+  padding: 8rem 2rem;
+}
+
+.catalogue-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+
+.pagination{
+    text-align: center;
+}
+
+.pagination .btn{
+    margin: 3rem 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .catalogue-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

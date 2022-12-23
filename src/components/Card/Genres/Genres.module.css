@@ -1,0 +1,19 @@
+.genrebages {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 1rem;
+}
+
+.genrebage {
+  color: var(--color-white);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem;
+}
