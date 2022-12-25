@@ -46,6 +46,7 @@ export default function Detail() {
             $('#mouse').css('opacity', '1');
         }, 4000);
     })
+
     return (
         <>
             <section className='details' id='details'>
@@ -63,6 +64,7 @@ export default function Detail() {
                             width='100%'
                             height='100%'
                             playing
+                            
                         />
                         <div id='player-title' className='details-title animate__animated animate__fadeInDownBig animate__delay-2s'>
                             {(details.title) ?
