@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { Service, getImage, toDate, langChanger } from '../../services/script';
 
 import Credits from '../Credits/Credits';
+import Genres from '../../Card/Genres/Genres';
 import './Film.css'
 
 export default function Film() {
@@ -30,11 +31,8 @@ export default function Film() {
                     </div>
                     <div className='movie-genres'>
                         {(details.genres) ?
-                            <><ul className='movie-genrebages'>
-                                {details.genres.map((item, index) => {
-                                    return <li className='genrebage' key={`${item.name}-${index * 54}`} >{item.name}</li>;
-                                })}
-                            </ul> </> :
+                            <Genres list={details.genres} detailed={true}/>
+                            :
                             <></>}
                     </div>
                     {(params.info === 'series' || params.info === 'tv') ? <></> :

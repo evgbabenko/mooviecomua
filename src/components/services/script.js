@@ -297,7 +297,6 @@ function langChanger(lang) {
 const toDate = (date) => {
     const monthes = ["Січня", "Лютого", "Березня", "Квітня", "Травня", "Червня", "Липня", "Серпня", "Вересня", "Жовтня", "Листопада", "Грудня"]
     let date1 = date.split('-');
-    console.log(date1)
     return `${date1[2]} ${monthes[Number(date1[1] - 1)]} ${date1[0]}`;
 }
 

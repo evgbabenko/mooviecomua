@@ -31,11 +31,7 @@ section.filmbox{
     margin-bottom: 2rem;
 }
 
-.info-box .movie-details .movie-genrebages{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+
 
 @media screen and (max-width: 1000px) {
     .info-box{

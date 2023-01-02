@@ -4,7 +4,10 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 1rem 1rem;
+  justify-items: ju;
+  margin: 0.5rem 0rem;
+  width: 100%;
+gap: 1rem;
 }
 
 .genrebage {
@@ -15,5 +18,14 @@
   background: var(--color-primary);
   border-radius: 1rem;
   padding: 0.5rem 1rem;
-  margin: 0.5rem 0.5rem;
+  /* margin: 0.5rem 0.5rem; */
+  
+}
+
+.movie_genrebages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0rem 0rem 1rem 0rem;
 }

@@ -12,8 +12,18 @@ const Genres = (props) => {
     })
   }
   return (
-    <ul className={css.genrebages}>
+    props.detailed ? 
+      <ul className={css.movie_genrebages}>
+        {
+          // eslint-disable-next-line array-callback-return
+          list.map((list_genres, index) => {
+             return <li className={css.genrebage} key={index}>{list_genres.name}</li>
+          })
+        }
+      </ul>
+    : <ul className={css.genrebages}>
       {
+        // eslint-disable-next-line array-callback-return
         genres.map((item_genres, index) => {
           for (let i = 0; i < list.length - 1; i++)
             if (list[i] === item_genres.id)
